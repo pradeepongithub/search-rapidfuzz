@@ -3,9 +3,9 @@ from datetime import datetime
 
 # Create a sample DataFrame for testing
 data = {
-    "faq_id": [1, 2, 3, 4, 5],
+    "id": [1, 2, 3, 4, 5],
     "category": ["General", "Billing", "Technical", "Account", "General"],
-    "faq_title": [
+    "title": [
         "How to reset my password?",
         "How to update billing information?",
         "Troubleshooting login issues",
@@ -20,7 +20,6 @@ data = {
         "Our refund policy allows refunds within 30 days of purchase."
     ],
     "comment": ["", "", "", "", ""],
-    "attachments": [[], [], [], [], []],
     "updated_by": ["admin", "admin", "admin", "admin", "admin"],
     "updated": [
         datetime(2023, 1, 1),
@@ -28,8 +27,7 @@ data = {
         datetime(2023, 1, 3),
         datetime(2023, 1, 4),
         datetime(2023, 1, 5)
-    ],
-    "ai_off": [False, False, False, False, False]
+    ]
 }
 
 # Convert the dictionary to a pandas DataFrame
